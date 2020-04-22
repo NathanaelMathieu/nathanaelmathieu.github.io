@@ -1,0 +1,19 @@
+@import "src/style.scss";
+
+.Projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2vw;
+  row-gap: 3vh;
+  padding: 2%;
+  padding-bottom: 4%;
+  justify-content: center;
+
+  @media only screen and (min-width: 600px){
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

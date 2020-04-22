@@ -1,0 +1,32 @@
+@import "src/style.scss";
+
+.Contact {
+  padding: 2%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  height: calc(100% - 4% - #{$header-height});
+
+  .card_container {
+    width: 80vw;
+    @media only screen and (min-width: 400px){
+      width: 25vw;
+      min-width: 320px;
+    }
+  }
+
+  .text_container {
+    width: 100%;
+    @media only screen and (min-width: 545px){
+      width: 80vw;
+      min-width: 545px;
+    }
+  }
+
+  .button_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}

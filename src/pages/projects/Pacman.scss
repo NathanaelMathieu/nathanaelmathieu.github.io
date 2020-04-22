@@ -1,0 +1,43 @@
+@import "src/style.scss";
+
+.Pacman {
+  margin: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  text-indent: 2em;
+  > * {
+    margin: 1%;
+    min-width: 330px;
+    flex-basis: 100vw;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media only screen and (min-width: 800px) {
+    .image_text {
+      :nth-child(odd) {
+        flex-basis: 40vw;
+      }
+      :nth-child(even) {
+        flex-basis: 50vw;
+      }
+    }
+    .image_text:nth-of-type(2n) {
+      :nth-child(2n-1){
+        order: 2;
+      }
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+
+  }
+  @media only screen and (min-width: 1250px) {
+    font-size: x-large;
+  }
+}
+

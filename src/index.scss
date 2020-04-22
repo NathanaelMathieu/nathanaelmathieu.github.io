@@ -1,0 +1,13 @@
+@import "src/style.scss";
+
+body {
+  margin: 0;
+  background: $blue-grey-light;
+  font-family: $montserrat;
+  font-size: x-large;
+  text-align: justify;
+}
+
+#root {
+  height: 100vh;
+}

@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "barkadeer",
+        "browserslist",
+        "nipperkin",
+        "unmount"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

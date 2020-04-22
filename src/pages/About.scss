@@ -1,0 +1,45 @@
+@import "src/style.scss";
+
+.About {
+  margin: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  > * {
+    margin: 1%;
+    min-width: 330px;
+    flex-basis: 100vw;
+  }
+  .profile_text .heading{
+    overflow: hidden;
+    height: 0;
+  }
+  .profile_picture {
+    flex-basis: 60vw;
+  }
+  @media only screen and (min-width: 888px) {
+    .profile_picture {
+      flex-basis: 35vw;
+    }
+    .profile_text {
+      flex-basis: 55vw;
+      .heading{
+        height: auto;
+      }
+    }
+    .project_picture {
+      flex-basis: 45vw;
+      order: 2;
+    }
+    .project_text {
+      flex-basis: 45vw;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .end_picture {
+      order: 2;
+    }
+  }
+}
+
