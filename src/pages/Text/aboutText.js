@@ -4,7 +4,7 @@ import { Text } from "../../components";
 
 export const aboutMeText = <Text text=
   {
-  `Hi, my name is Nate. I am a Computer Science Major in the Class of 2020 at Wesleyan University, and I use he/him pronouns.
+  `Hi, my name is Nate and I use he/him pronouns. I am a Computer Science Major and Integrated Design, Engineering, and Applied Sciences Minor in the Class of 2020 at Wesleyan University.
 
   Since high school I've been answering the question, "What do you want to do?" with "Build Stuff." It's not a very specific goal by any means, but it speaks to my underlying desire to create. That desire has shaped much of my life. Whether it is working on coding, cooking, baking, brewing, or building, I have devoted endless hours to craft.
 

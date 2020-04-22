@@ -18,14 +18,25 @@
   .profile_picture {
     flex-basis: 60vw;
   }
-  @media only screen and (min-width: 888px) {
+  .end_picture {
+    order: 2;
+  }
+  @media only screen and (min-width: 500px) {
+    .profile_picture {
+      flex-basis: calc(40vw + 50px);
+    }
+    .project_picture {
+      flex-basis: calc(30vw + 200px);
+    }
+  }
+  @media only screen and (min-width: 1200px) {
     .profile_picture {
       flex-basis: 35vw;
     }
     .profile_text {
       flex-basis: 55vw;
       .heading{
-        height: auto;
+        height: min-content;
       }
     }
     .project_picture {
@@ -34,11 +45,6 @@
     }
     .project_text {
       flex-basis: 45vw;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .end_picture {
-      order: 2;
     }
   }
 }

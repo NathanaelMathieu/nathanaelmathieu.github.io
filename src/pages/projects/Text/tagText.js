@@ -3,38 +3,20 @@ import { Text } from "../../../components";
 
 export const t1 = <Text text=
 {
-`The Cube was a combination of elements from a poster by Yusaka Kamekura for the Tokyo International Lighting Design Competition of 1979. Several steps were taken to transform the poster into a 3D object. The outside and inside feature the same grid that made up the foreground of the poster, and the hexagonal entrances, or portals, are a based off of the lighting fixtures installed in the poster's grid. After mapping the object into a third dimension, the portals allow the viewer to look into the interior space of the cube as well as out to the other side.
-`
+  `This was my first IDEAS Project, and it was a fairly ambitious one. In the first iteration of IDEAS 175, my group of four decided to build a customizable robot battling platform that would allow people to develop their own mechanisms for competing in a game generally known as Tag. The game was based around collecting little cubes and hoarding them in base zones designated for each of the two teams. As a group, we designed the playing field, robot cage covered in mount points, and a few example mechanisms.
+  `
 }
 />;
 
 export const t2 = <Text text=
 {
-`The main theme of this work is perspective. Meant as a reference to the cube’s origins as a Lighting Design competition, the interior space of the cube is lit by ambient light from the room the viewer is in. By viewing the space through a portal, the lighting of the space necessarily changes, affecting what the viewer sees. When the viewer looks through the space back into the room, there is a telescoping effect that focuses their attention on the small area in view. This change in perspective can be surprising as the colors that rim the portals change the way we see that limited field of view.
-`}
+  `My component of the project was to design and manufacture the cages. This was a tricky task, as the robots were already constructed as part of the class. I had to work around those design specifications while also defining and supporting my own set of specifications for attaching to the cage. The mount point design I settled on featured a plus-shape with a center hole cut out. Wires could be passed through any of the larger holes in the cage if the component needed to be powered, and the functionality of the robot's movement was unimpeded by the cage.
+  `}
 />;
 
 export const t3 = <Text text=
 {
-`This project involved taking a poster and turning it into some sort of paper-based work. The poster I had chosen featured a grid with concentric circles of different colors rimmed with a glowing light effect. The initial plan was to make a cube with these circular "portals", as I came to call them, but upon construction of the first prototype it was clear that circles would not work. I was fixed on the portals being 3D and not stacked paper, and in order to achieve that I had to be clever about how I folded and glued the portals together. I was unable to find a cohesive way of holding them together, so I pivoted to hexagons. The flat sides were much easier to work with, as folding along the crease made a perfect area to glue to adjacent sections.
+  `As far as first projects go, this one was pretty well done. I went through multiple iterations of drafts in fairly quick succession, utilizing SolidWorks Assemblies to rapidly prototype the different parts an how they interfaced together. The most challenging aspects of the project were due to relying too heavily on these assemblies.
+  SolidWorks was still quite new to me at this time. While I felt confident in using it to create these 2D parts and 3D assemblies, I doubted my ability to make more complex things. I would often find that my design worked virtually, but that it did not fit well on the robot. The solution, which I was aware of, would be to create a virtual robot to test against. Brief attempts to do so were not successful, so this more wasteful but still effective process of physical prototyping was used instead. That process would only grow more refined throughout the rest of my IDEAS career.
 `}
-/>;
-
-export const t4 = <Text text=
-{
-`The change from circular to hexagonal portals was the only prototyping step done physically. In order to test my Adobe Illustrator abilities and save paper and ink, I focused on prototyping entirely digitally. This was as challenging as you would imagine, but after printing and cutting two sides of the cube with circular portals I realized that a different shape would have to be used. Hexagons were chosen for their visual fit on the triangular grid. After printing and laser cutting the components out, assembly took several hours.`
-}
-/>;
-
-export const t5 = <Text text=
-{
-`While the greatest obstacle that I overcame in this project was the redesign of the portals, there were multiple other components that I had to work through. many of these were in done in the conceptual digital phase, including working out the sizing of the tabs that connect each section of the portals together and ensuring that they would connect in a seamless way. Since the portals would be visible both from the outside and from the inside through other portals, both sides of portal needed to appear free of adhesives or other attaching methods. This led to very carefully sized tabs that did not overlap so that all necessary adhesive would be directly between each piece of paper. `}
-/>;
-
-export const t6 = <Text text=
-{
-`
-My biggest takeaway from this project was the vast amount of resources that can be saved by adequately planning the entirety of the project before beginning. I have previously been more of a "dive in and try it" prototyper, spending less time initially on the conceptual work. While I am successful in that approach, I feel better able to use a more balanced, methodical process in the future.
-`
-}
 />;

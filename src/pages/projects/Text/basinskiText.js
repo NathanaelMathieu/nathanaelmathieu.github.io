@@ -3,38 +3,30 @@ import { Text } from "../../../components";
 
 export const t1 = <Text text=
 {
-`The Cube was a combination of elements from a poster by Yusaka Kamekura for the Tokyo International Lighting Design Competition of 1979. Several steps were taken to transform the poster into a 3D object. The outside and inside feature the same grid that made up the foreground of the poster, and the hexagonal entrances, or portals, are a based off of the lighting fixtures installed in the poster's grid. After mapping the object into a third dimension, the portals allow the viewer to look into the interior space of the cube as well as out to the other side.
+`
+Basinski is named after and inspired by the Avant-garde composer William Basinski. Designed as an installation piece, Basinski analyzes our relationship with memory, time, and emotion. A simple time lapse of a sunset plays on a screen with a webcam as the song dlp 1.1 plays in the background. dlp 1.1 comes from William Basinski' The Disintegration Loops, a series of short magnetic tape loops played as the magnetic material that represents their sound falls off. As the viewer observes the sunset and the hour long song plays, they begin to notice that their movements change the image.
 `
 }
 />;
 
 export const t2 = <Text text=
 {
-`The main theme of this work is perspective. Meant as a reference to the cube’s origins as a Lighting Design competition, the interior space of the cube is lit by ambient light from the room the viewer is in. By viewing the space through a portal, the lighting of the space necessarily changes, affecting what the viewer sees. When the viewer looks through the space back into the room, there is a telescoping effect that focuses their attention on the small area in view. This change in perspective can be surprising as the colors that rim the portals change the way we see that limited field of view.
+`As the song loops, the sunset begins to show them watching it. The webcam video continues to blend into the sunset until they are deeply connected. The tape continues to degrade. The sunset loses its color as the webcam becomes more apparent in the bright areas of the video. Near the end of the hour, almost none of the sunset remains. The sun is there, but the rest is just a tint on the screen. The song fades to darkness, and the video fades to black.
+This piece was ambitious for numerous reasons. I committed to it during a very difficult time in my life. Both of my remaining grandparents entered hospice and passed away within a week of each other, provoking a lot of painful thoughts and emotions. I decided to channel that into the piece, writing a program that would meld the now into the past.
 `}
 />;
 
 export const t3 = <Text text=
 {
-`This project involved taking a poster and turning it into some sort of paper-based work. The poster I had chosen featured a grid with concentric circles of different colors rimmed with a glowing light effect. The initial plan was to make a cube with these circular "portals", as I came to call them, but upon construction of the first prototype it was clear that circles would not work. I was fixed on the portals being 3D and not stacked paper, and in order to achieve that I had to be clever about how I folded and glued the portals together. I was unable to find a cohesive way of holding them together, so I pivoted to hexagons. The flat sides were much easier to work with, as folding along the crease made a perfect area to glue to adjacent sections.
+`The Disintegration Loops have always reminded me of how fleeting our time is, and how our memory is even more fleeting. The sunset is meant to represent a beautiful memory that is fading with every passing day. As we remember it, or observe the video, we affect it, inserting ourselves into that place. We experience it for what it is now; a memory, and not for what it was. These changes stack until the memory is all but gone.
+I wasn't sure how I would implement this program, but committed to using Processing and interacted with the libraries directly using Java. My most critical accomplishments in terms of code were two functions that considered whether the video was being observed.
 `}
 />;
 
 export const t4 = <Text text=
 {
-`The change from circular to hexagonal portals was the only prototyping step done physically. In order to test my Adobe Illustrator abilities and save paper and ink, I focused on prototyping entirely digitally. This was as challenging as you would imagine, but after printing and cutting two sides of the cube with circular portals I realized that a different shape would have to be used. Hexagons were chosen for their visual fit on the triangular grid. After printing and laser cutting the components out, assembly took several hours.`
-}
-/>;
-
-export const t5 = <Text text=
-{
-`While the greatest obstacle that I overcame in this project was the redesign of the portals, there were multiple other components that I had to work through. many of these were in done in the conceptual digital phase, including working out the sizing of the tabs that connect each section of the portals together and ensuring that they would connect in a seamless way. Since the portals would be visible both from the outside and from the inside through other portals, both sides of portal needed to appear free of adhesives or other attaching methods. This led to very carefully sized tabs that did not overlap so that all necessary adhesive would be directly between each piece of paper. `}
-/>;
-
-export const t6 = <Text text=
-{
 `
-My biggest takeaway from this project was the vast amount of resources that can be saved by adequately planning the entirety of the project before beginning. I have previously been more of a "dive in and try it" prototyper, spending less time initially on the conceptual work. While I am successful in that approach, I feel better able to use a more balanced, methodical process in the future.
-`
+Changes in the RGB levels of the room and noise threshold on the mic would trigger the function that, with some randomness, faded in the webcam footage. This slow fade produced a noticeable effect if you watched for five or more minutes, but not if you watched a few loops of the sunset and then walked away.
+While this project is probably the one I am most proud of, I have been thus far unable to make a portable copy that can be viewed by others. The code is, similarly, not accessible at present. I hope to have both public in the near future.`
 }
 />;

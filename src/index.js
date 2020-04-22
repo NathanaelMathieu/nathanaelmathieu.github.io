@@ -1,7 +1,7 @@
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { About, Contact } from "./pages/";
-import { Basinski, Cube, Hopper, Marble, Pacman, Tag, Tempest, Template }
+import { Basinski, Cube, Hopper, Marble, Pacman, Tag, Tempist, Template }
   from "./pages/projects/";
 import { NotFound, Projects } from "./pages";
 import { Route, HashRouter as Router, Switch } from "react-router-dom";
@@ -22,7 +22,7 @@ const routing =
       <Route exact path="/projects/marble" component={Marble} />
       <Route exact path="/projects/pacman" component={Pacman} />
       <Route exact path="/projects/tag" component={Tag} />
-      <Route exact path="/projects/tempest" component={Tempest} />
+      <Route exact path="/projects/tempist" component={Tempist} />
       <Route exact path="/projects/template" component={Template} />
       <Route component={NotFound} />
     </Switch>

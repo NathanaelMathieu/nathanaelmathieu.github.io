@@ -3,38 +3,26 @@ import { Text } from "../../../components";
 
 export const t1 = <Text text=
 {
-`The Cube was a combination of elements from a poster by Yusaka Kamekura for the Tokyo International Lighting Design Competition of 1979. Several steps were taken to transform the poster into a 3D object. The outside and inside feature the same grid that made up the foreground of the poster, and the hexagonal entrances, or portals, are a based off of the lighting fixtures installed in the poster's grid. After mapping the object into a third dimension, the portals allow the viewer to look into the interior space of the cube as well as out to the other side.
+`This project, or rather a series of projects, was undertaken in COMP 360A - Artificial Intelligence. We studied a combination of classical artificial intelligence and more modern concepts, all built around the framework of the Berkley Pacman Project. As with other coding projects, I would share my source code here but the creators of the project would prefer solutions to not be shared publicly.
+The adjacent maze represents a portion of the search project. We were instructed to write search algorithms of various types: Depth First, Breadth First, Uniform Cost, and A*. This included exploring heuristics and a fair amount of problem solving. All three algorithms other than A* were ones that I had covered during previous classes, specifically Algorithms and Data Structures, so this project was fairly trivial. I spent much of my time considering different heuristics for A* to use. A heuristic is used to estimate the value of a state or action, and by comparing different values, the best action or future state can be chosen. For the scope of this pacman project, more simple heuristics were generally more effective.
 `
 }
 />;
 
 export const t2 = <Text text=
 {
-`The main theme of this work is perspective. Meant as a reference to the cube’s origins as a Lighting Design competition, the interior space of the cube is lit by ambient light from the room the viewer is in. By viewing the space through a portal, the lighting of the space necessarily changes, affecting what the viewer sees. When the viewer looks through the space back into the room, there is a telescoping effect that focuses their attention on the small area in view. This change in perspective can be surprising as the colors that rim the portals change the way we see that limited field of view.
+`Project 2 introduced some different algorithms to take into account multiple factors. These were generally centered around Minmax trees but touched on different aspects of implementation such as efficiency and correctness. Alpha Beta pruning, in particular, was a compelling concept. Rather than evaluating all possible outcomes to a certain depth, you ignore ones that you can logically eliminate based on the rules set forward. The exact implementation was somewhat tricky, but as with much of the work spent on these projects, it was essentially just translating pseudo code into python and then debugging it.
 `}
 />;
 
 export const t3 = <Text text=
 {
-`This project involved taking a poster and turning it into some sort of paper-based work. The poster I had chosen featured a grid with concentric circles of different colors rimmed with a glowing light effect. The initial plan was to make a cube with these circular "portals", as I came to call them, but upon construction of the first prototype it was clear that circles would not work. I was fixed on the portals being 3D and not stacked paper, and in order to achieve that I had to be clever about how I folded and glued the portals together. I was unable to find a cohesive way of holding them together, so I pivoted to hexagons. The flat sides were much easier to work with, as folding along the crease made a perfect area to glue to adjacent sections.
-`}
+`As we dove deeper into AI concepts, I began to feel more confident about my abilities to code the necessary algorithms. The third project was particularly challenging, using reinforcement learning algorithms to teach the AI to make better decisions. These algorithms felt like they were beyond me in terms of theory. When I sat down to write them, however, I found it much easier to wrap my head around. This sort of aggressive prototyping is something that I often do in other projects, but not one that I had tried much in code-based ones. I will certainly do more of it in the future. `}
 />;
 
 export const t4 = <Text text=
 {
-`The change from circular to hexagonal portals was the only prototyping step done physically. In order to test my Adobe Illustrator abilities and save paper and ink, I focused on prototyping entirely digitally. This was as challenging as you would imagine, but after printing and cutting two sides of the cube with circular portals I realized that a different shape would have to be used. Hexagons were chosen for their visual fit on the triangular grid. After printing and laser cutting the components out, assembly took several hours.`
-}
-/>;
-
-export const t5 = <Text text=
-{
-`While the greatest obstacle that I overcame in this project was the redesign of the portals, there were multiple other components that I had to work through. many of these were in done in the conceptual digital phase, including working out the sizing of the tabs that connect each section of the portals together and ensuring that they would connect in a seamless way. Since the portals would be visible both from the outside and from the inside through other portals, both sides of portal needed to appear free of adhesives or other attaching methods. This led to very carefully sized tabs that did not overlap so that all necessary adhesive would be directly between each piece of paper. `}
-/>;
-
-export const t6 = <Text text=
-{
 `
-My biggest takeaway from this project was the vast amount of resources that can be saved by adequately planning the entirety of the project before beginning. I have previously been more of a "dive in and try it" prototyper, spending less time initially on the conceptual work. While I am successful in that approach, I feel better able to use a more balanced, methodical process in the future.
-`
+ Looking back, the most valuable part of these projects was the Evaluation Function in Project 2. The goal was to write an evaluation function for states, and this required far more thought other portions of the class. As in the previous project, I started with fairly simple evaluations of distance from pellets and ghosts. This was met with moderate success. I pushed on with far more complex additions to the simple calculations and had practically no success. In the end, the best function I could muster took only a few basic things into account and performed adequately, but not particularly well. Once again, I had found that complex solutions were not as successful as simple ones, even if both came up short.`
 }
 />;

@@ -21,7 +21,7 @@
   @media only screen and (min-width: 800px) {
     .image_text {
       :nth-child(odd) {
-        flex-basis: 40vw;
+        flex-basis: 30vw;
       }
       :nth-child(even) {
         flex-basis: 50vw;

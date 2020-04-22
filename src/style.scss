@@ -14,3 +14,41 @@ $blue-pale-transparent: #1d6a9a4d;
 
 //Other Variables
 $header-height: 40px;
+
+@mixin alternatingPictureLayout($columnBreakpoint) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  > * {
+    margin: 1%;
+    min-width: 330px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media only screen and (min-width: 450px) {
+    .image_text {
+      :nth-child(odd) {
+        flex-basis: calc(20vw + 360px);
+      }
+    }
+  }
+  @media only screen and (min-width: #{$columnBreakpoint}) {
+    .image_text {
+      :nth-child(odd) {
+        flex-basis: 40vw;
+      }
+      :nth-child(even) {
+        flex-basis: 50vw;
+      }
+    }
+    .image_text:nth-of-type(2n) {
+      :nth-child(2n-1){
+        order: 2;
+      }
+    }
+  }
+}

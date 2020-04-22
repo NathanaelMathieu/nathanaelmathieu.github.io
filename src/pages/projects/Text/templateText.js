@@ -3,38 +3,29 @@ import { Text } from "../../../components";
 
 export const t1 = <Text text=
 {
-`The Cube was a combination of elements from a poster by Yusaka Kamekura for the Tokyo International Lighting Design Competition of 1979. Several steps were taken to transform the poster into a 3D object. The outside and inside feature the same grid that made up the foreground of the poster, and the hexagonal entrances, or portals, are a based off of the lighting fixtures installed in the poster's grid. After mapping the object into a third dimension, the portals allow the viewer to look into the interior space of the cube as well as out to the other side.
+  `When I approached Prof. Moller about making my portfolio for the upcoming spring deadlines I had mixed feelings about his suggestion that I make a web-based portfolio. I knew that it was going to be a lot of work, but that wasn't the issue. My biggest hesitation was with the what work would actually be. I had been working on Front End theory and then design for much of 2019, and came out of the theory portion excited and considering a career as a Front End developer. Then I started to work at a company doing, mostly, front end. It was not very enjoyable. I found myself far less excited about it than any other coding project I had done before.
 `
 }
 />;
 
 export const t2 = <Text text=
 {
-`The main theme of this work is perspective. Meant as a reference to the cube’s origins as a Lighting Design competition, the interior space of the cube is lit by ambient light from the room the viewer is in. By viewing the space through a portal, the lighting of the space necessarily changes, affecting what the viewer sees. When the viewer looks through the space back into the room, there is a telescoping effect that focuses their attention on the small area in view. This change in perspective can be surprising as the colors that rim the portals change the way we see that limited field of view.
+  `So, after the meeting with Moller, I decided I would give it a go, hoping that it would solidify my feelings about it.  My conclusion was that I loved design and hated front end. Envisioning something and making it a reality is exciting. CSS and HTML drive me insane. This was an unfortunate thing to realize as I committed to this major project, but gave me plenty of clarity.
+  I started this whole project by deciding on my language and tools; I had worked with React.JS and SCSS the previous summer, so I went with them. I decided to build all my components from scratch to show my front end skills off, a decision that caused many headaches later on. After sketching some Project Page designs, I decided on the 3 column grid that this page uses, and decided to build myself a component to hold each image.
 `}
 />;
 
 export const t3 = <Text text=
 {
-`This project involved taking a poster and turning it into some sort of paper-based work. The poster I had chosen featured a grid with concentric circles of different colors rimmed with a glowing light effect. The initial plan was to make a cube with these circular "portals", as I came to call them, but upon construction of the first prototype it was clear that circles would not work. I was fixed on the portals being 3D and not stacked paper, and in order to achieve that I had to be clever about how I folded and glued the portals together. I was unable to find a cohesive way of holding them together, so I pivoted to hexagons. The flat sides were much easier to work with, as folding along the crease made a perfect area to glue to adjacent sections.
+` This component, ImageCard, soaked up many hours. I have little patience for CSS problems, and it bugged me to repeatedly have to solve the same problems over and over again. I am pretty proud of ImageCard, though, as it evolved from a container for static-ratio images to a dynamic card with clickability and hover text. Overall, it's highly customizable, and I'm pretty proud of that. When I encountered a feature I wanted it to have, I put it into my backlog and tried to add it soon. Still, everything would have been much easier if I had used a component library for this and all the other elements.
+
 `}
 />;
 
-export const t4 = <Text text=
+export const t4 = <Text preformatted=
 {
-`The change from circular to hexagonal portals was the only prototyping step done physically. In order to test my Adobe Illustrator abilities and save paper and ink, I focused on prototyping entirely digitally. This was as challenging as you would imagine, but after printing and cutting two sides of the cube with circular portals I realized that a different shape would have to be used. Hexagons were chosen for their visual fit on the triangular grid. After printing and laser cutting the components out, assembly took several hours.`
-}
-/>;
-
-export const t5 = <Text text=
-{
-`While the greatest obstacle that I overcame in this project was the redesign of the portals, there were multiple other components that I had to work through. many of these were in done in the conceptual digital phase, including working out the sizing of the tabs that connect each section of the portals together and ensuring that they would connect in a seamless way. Since the portals would be visible both from the outside and from the inside through other portals, both sides of portal needed to appear free of adhesives or other attaching methods. This led to very carefully sized tabs that did not overlap so that all necessary adhesive would be directly between each piece of paper. `}
-/>;
-
-export const t6 = <Text text=
-{
-`
-My biggest takeaway from this project was the vast amount of resources that can be saved by adequately planning the entirety of the project before beginning. I have previously been more of a "dive in and try it" prototyper, spending less time initially on the conceptual work. While I am successful in that approach, I feel better able to use a more balanced, methodical process in the future.
-`
+<p>
+  I did plenty of layout wireframes, eventually making a bunch of moveable pieces of paper that I could rearrange freely. This was a great tool, and led to much faster prototyping of designs. The Contact page was initially designed as a minimalist About Me page, but I realized it worked excellently in that context and built it for that. My hope is that future IDEAS students will consider using {<a href="https://github.com/NathanaelMathieu/IDEAS-Portfolio-Template" target="_blank" rel="noopener noreferrer">this</a>}. I&apos;ve put a lot of time into it, and it won&apos;t be the resume-building project I once hoped it would be. Hopefully future minor applicants will appreciate it and build on it.
+</p>
 }
 />;

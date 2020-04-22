@@ -5,4 +5,4 @@ export { default as Marble } from "./Marble.js";
 export { default as Pacman } from "./Pacman.js";
 export { default as Tag } from "./Tag.js";
 export { default as Template } from "./Template.js";
-export { default as Tempest } from "./Tempest.js";
+export { default as Tempist } from "./Tempist.js";

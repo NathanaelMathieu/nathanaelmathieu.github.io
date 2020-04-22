@@ -1,0 +1,6 @@
+@import "src/style.scss";
+
+.Tempist {
+  margin: 2%;
+  @include alternatingPictureLayout(1000px);
+}

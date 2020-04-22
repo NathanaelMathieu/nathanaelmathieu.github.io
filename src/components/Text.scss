@@ -3,8 +3,8 @@
 .body {
   font-family: $montserrat;
   font-size: calc(1rem + 0.3vw);
-  text-align: justify;
   text-indent: 2em;
+  line-height: 150%;
 }
 
 .heading {
@@ -17,4 +17,5 @@
   }
   font-family: $raleway;
   text-align: center;
+  line-height: 0;
 }
