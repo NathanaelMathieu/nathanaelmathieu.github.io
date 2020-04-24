@@ -11,7 +11,7 @@
   justify-content: center;
   a {
     div svg {
-      color: invert($main);
+      color: $accent;
     }
     overflow: hidden;
     border-radius: 10px;
@@ -25,5 +25,8 @@
   }
   a:active{
     @include neuShadow(4px, 1);
+    div svg {
+      color: $main;
+    }
   }
 }

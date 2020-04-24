@@ -16,9 +16,12 @@ $blue-grey-dark: #005555;
 $blue-pale-transparent: #1d6a9a4d;
 
 //Theme Colors
-$main: #e1e9e8;
-$accent-dark: darken($main, 20);
-$accent-light: lighten($main, 20);
+$main: #b4f3ec;
+$main-dark: darken($main, 20);
+$main-light: lighten($main, 20);
+$accent: #243e42;
+$accent-dark: darken($accent, 0);
+$accent-light: lighten($accent, 20);
 
 //Other Variables
 $header-height: 50px;
@@ -64,22 +67,28 @@ $header-height: 50px;
 
 @mixin neuShadow($size, $down) { //top left light
   @if $down == 0 {
-    box-shadow: $size $size calc(#{$size} * 2) $accent-dark, calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
+    background-color: $main;
+    color: $accent;
+    box-shadow: $size $size calc(#{$size} * 2) $main-dark,
+                calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $main-light;
   } @else {
-    box-shadow: inset $size $size calc(#{$size} * 2) $accent-dark, inset calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
+    background-color: $accent;
+    color: $main;
+    box-shadow: inset $size $size calc(#{$size} * 2) $accent-dark,
+                inset calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
   }
 }
 
 //global styles is applied to body in index.scss
 @mixin globalStyles(){
-  color: invert($main);
+  color: $accent;
   a:link {
-    color: invert($main);
+    color: $accent;
     @include neuShadow(2px,0);
     text-decoration: none;
   }
   a:visited{
-    color: invert($main);
+    color: $accent;
     @include neuShadow(2px,0);
   }
   a:active{
