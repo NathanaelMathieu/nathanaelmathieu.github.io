@@ -35,7 +35,11 @@
         color: $text;
       }
       a:hover {
-        @include neuShadow(10px, 1);
+        @include neuShadow(5px, 0);
+        cursor: pointer;
+      }
+      a:active {
+        @include neuShadow(5px, 1);
         cursor: pointer;
       }
     }
