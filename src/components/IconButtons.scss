@@ -4,13 +4,15 @@
   @include neuShadow(1px, 0);
   padding: 1vw;
   border-radius: 12px;
-  background-color: $wesleyan-red;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 15%;
   min-width: 180px;
   justify-content: center;
   a {
+    div svg {
+      color: invert($main);
+    }
     overflow: hidden;
     border-radius: 10px;
     padding: 8px 30px 6px 8px;

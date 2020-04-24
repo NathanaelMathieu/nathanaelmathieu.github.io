@@ -16,16 +16,9 @@ $blue-grey-dark: #005555;
 $blue-pale-transparent: #1d6a9a4d;
 
 //Theme Colors
-$background: $wesleyan-red;
-$accent-dark: $wesleyan-accent1;
-$accent-light: $wesleyan-accent2;
-$text: invert($wesleyan-black);
-$text-invert: $wesleyan-black;
-
-$colora: #fff4c8;
-$colora: #dbd2ac;
-$colora: #ffffe4;
-
+$main: #e1e9e8;
+$accent-dark: darken($main, 20);
+$accent-light: lighten($main, 20);
 
 //Other Variables
 $header-height: 50px;
@@ -79,14 +72,14 @@ $header-height: 50px;
 
 //global styles is applied to body in index.scss
 @mixin globalStyles(){
-  color: $text;
+  color: invert($main);
   a:link {
-    color: $text;
+    color: invert($main);
     @include neuShadow(2px,0);
     text-decoration: none;
   }
   a:visited{
-    color: $text;
+    color: invert($main);
     @include neuShadow(2px,0);
   }
   a:active{

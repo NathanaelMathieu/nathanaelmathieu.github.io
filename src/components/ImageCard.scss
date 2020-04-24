@@ -26,7 +26,7 @@
 
       text-align: right;
       font-size: medium;
-      color: $text;
+      color: invert($main);
 
       visibility: hidden;
       opacity: 0;

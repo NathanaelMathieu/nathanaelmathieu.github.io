@@ -3,7 +3,7 @@
 
 .Header {
   @include neuShadow(4px, 0);
-  background-color: $background;
+  // background-color: $main;
   display: flex;
   text-decoration: none;
   font-family: $raleway;
@@ -32,7 +32,7 @@
         padding: 3px 5px 2px 5px;
         border-radius: 8px;
         @include neuShadow(2px,0);
-        color: $text;
+        color: invert($main);
       }
       a:hover {
         @include neuShadow(5px, 0);

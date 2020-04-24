@@ -14,7 +14,6 @@ function styleIcon(IconComponent, route) {
       rel="noopener noreferrer"
     >
       <IconContext.Provider value ={{ className: "icon",
-      color: "white",
       size: "2em" }}>
         <div>
           <IconComponent/>
