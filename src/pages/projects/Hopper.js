@@ -1,8 +1,8 @@
 import "./Hopper.scss";
 import { ImageCard, Layout } from "../../components";
 import React, { Component } from "react";
-import { final, finalExt, holder, pendulums } from "../../resources/projects/hopper";
-import { t1, t2, t3, t4, t5, t6 } from "./Text/hopperText.js";
+import { final, finalExt, pendulums } from "../../resources/projects/hopper";
+import { t1, t2, t3 } from "./Text/hopperText.js";
 
 export default class Hopper extends Component {
   componentDidMount() {

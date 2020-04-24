@@ -1,9 +1,9 @@
 import "./Marble.scss";
 import { ImageCard, Layout } from "../../components";
 import React, { Component } from "react";
-import { clips, funnel, funnelGif, kids, track }
+import { clips, funnelGif, kids }
  from "../../resources/projects/marble";
-import { t1, t2, t3, t4, t5, t6 } from "./Text/marbleText.js";
+import { t1, t2, t3 } from "./Text/marbleText.js";
 
 export default class Marble extends Component {
   componentDidMount() {
