@@ -1,3 +1,6 @@
+---
+permalink: src/index.html
+---
 # IDEAS Portfolio Template
 
 This portfolio template was created to serve as a template for IDEAS minors completing the Computer Module at Wesleyan University. It is built using React, a useful Java Script framework with far more capabilities than used here. To learn more about React, check out the [React documentation](https://reactjs.org/). The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and the default documentation remains below.
