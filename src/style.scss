@@ -4,17 +4,33 @@
 $raleway: "Raleway", sans-serif;
 $montserrat: "Montserrat", sans-serif;
 
-//Theme Colors
+
+//color database
 $wesleyan-red: #d72121;
+$wesleyan-accent1: #ac1a1a;
+$wesleyan-accent2: #ff2828;
 $wesleyan-black: #101820;
 $blue-grey: #2e8888;
 $blue-grey-light: #3fbdbd;
 $blue-grey-dark: #005555;
 $blue-pale-transparent: #1d6a9a4d;
 
-//Other Variables
-$header-height: 40px;
+//Theme Colors
+$background: $wesleyan-red;
+$accent-dark: $wesleyan-accent1;
+$accent-light: $wesleyan-accent2;
+$text: invert($wesleyan-black);
+$text-invert: $wesleyan-black;
 
+$colora: #fff4c8;
+$colora: #dbd2ac;
+$colora: #ffffe4;
+
+
+//Other Variables
+$header-height: 50px;
+
+//Mixins
 @mixin alternatingPictureLayout($columnBreakpoint) {
   display: flex;
   flex-flow: row wrap;
@@ -50,5 +66,30 @@ $header-height: 40px;
         order: 2;
       }
     }
+  }
+}
+
+@mixin neuShadow($size, $down){
+  transition: box-shadow 0.2s cubic-bezier(.1, .8, .9, .9);
+  @if $down == 0 {
+    box-shadow: $size $size calc(#{$size} * 2) $accent-dark, calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
+  } @else {
+    box-shadow: inset $size $size calc(#{$size} * 2) $accent-dark, inset calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
+  }
+}
+
+@mixin globalStyles(){
+  color: $text;
+  a:link {
+    color: $text;
+    @include neuShadow(2px,0);
+    text-decoration: none;
+  }
+  a:visited{
+    color: $text;
+    @include neuShadow(2px,0);
+  }
+  a:active{
+    @include neuShadow(2px,1);
   }
 }

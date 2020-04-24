@@ -2,10 +2,10 @@
 
 .wrapper {
   .ImageCard {
+    @include neuShadow(10px,1);
     padding: 3%;
     display: flex;
     align-items: center;
-    background: $blue-grey;
     border-radius: 12px;
     transition: box-shadow 0.5s, transform 0.5s ease-in-out;
     position: relative;
@@ -21,12 +21,12 @@
       width: calc(100% - 6% - 20px);
       height: calc(100% - 9% - 20px);
       position: absolute;
-      background: $blue-pale-transparent;
+      background: adjust-color($color: $accent-light, $alpha: -0.8);
       padding: 10px;
 
       text-align: right;
       font-size: medium;
-      color: white;
+      color: $text;
 
       visibility: hidden;
       opacity: 0;
@@ -34,16 +34,24 @@
 
       transition: opacity 0.5s, visibility 0.2s;
     }
+    &.Clickable {
+      @extend .ImageCard;
+      @include neuShadow(2px, 0);
+    }
+    &.Clickable:hover{
+      @extend .ImageCard;
+      @include neuShadow(4px, 0);
+      cursor: pointer;
+    }
+    &.Clickable:active{
+      @extend .ImageCard;
+      @include neuShadow(4px, 1);
+      cursor: pointer;
+    }
   }
 }
 
-.Clickable{
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-}
-.Clickable:hover{
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
+
 .ImageCard:hover {
   .text {
     visibility: visible;

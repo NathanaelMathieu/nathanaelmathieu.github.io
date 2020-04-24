@@ -2,8 +2,9 @@
 
 body {
   margin: 0;
-  background: $blue-grey-light;
+  background: $background;
   font-family: $montserrat;
+  @include globalStyles();
 }
 
 #root {

@@ -2,18 +2,18 @@
 
 
 .Header {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: $wesleyan-red;
+  @include neuShadow(4px, 0);
+  background-color: $background;
   display: flex;
   text-decoration: none;
   font-family: $raleway;
   height: $header-height;
   font-size: 18px;
   @media only screen and (min-width: 350px){
-    font-size: calc((11vw - 15px) * .75);
+    font-size: calc(30px - (510px - 100vw) * .075);
   }
   @media only screen and (min-width: 510px){
-    font-size: calc(#{$header-height} * 0.75);
+    font-size: calc(#{$header-height} * 0.6);
   }
 
   ul {
@@ -30,11 +30,12 @@
       a {
         text-decoration: none;
         padding: 3px 5px 2px 5px;
-        color: white;
-        transition: background-color 0.5s cubic-bezier(.1, .8, .9, .9);
+        border-radius: 8px;
+        @include neuShadow(2px,0);
+        color: $text;
       }
       a:hover {
-        background-color: $blue-grey;
+        @include neuShadow(10px, 1);
         cursor: pointer;
       }
     }
