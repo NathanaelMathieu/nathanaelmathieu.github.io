@@ -69,8 +69,7 @@ $header-height: 50px;
   }
 }
 
-@mixin neuShadow($size, $down){
-  transition: box-shadow 0.2s cubic-bezier(.1, .8, .9, .9);
+@mixin neuShadow($size, $down) { //top left light
   @if $down == 0 {
     box-shadow: $size $size calc(#{$size} * 2) $accent-dark, calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
   } @else {
@@ -78,6 +77,7 @@ $header-height: 50px;
   }
 }
 
+//global styles is applied to body in index.scss
 @mixin globalStyles(){
   color: $text;
   a:link {
