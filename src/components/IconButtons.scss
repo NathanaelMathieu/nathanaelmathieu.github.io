@@ -1,7 +1,7 @@
 @import "src/style.scss";
 
 .IconButtons {
-  @include neuShadow(2px, 0);
+  @include neuShadow(1px, 0);
   padding: 1vw;
   border-radius: 12px;
   background-color: $wesleyan-red;
@@ -10,17 +10,18 @@
   grid-gap: 15%;
   min-width: 180px;
   justify-content: center;
-  .icon {
-    border-radius: 8px;
-    padding:4px;
+  a {
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 8px 30px 6px 8px;
     @include neuShadow(2px, 0);
   }
-  .icon:hover {
+  a:hover {
     @include neuShadow(3px, 0);
-    filter:  drop-shadow(0 0 4px rgba(0,0,0,0.2));
+    // filter:  drop-shadow(0 0 4px rgba(0,0,0,0.2));
     cursor: pointer;
   }
-  .icon:active{
+  a:active{
     @include neuShadow(4px, 1);
   }
 }
