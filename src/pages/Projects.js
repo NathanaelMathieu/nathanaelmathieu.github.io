@@ -34,7 +34,7 @@ export default class Projects extends Component {
            text="Pacman Project | Fall 2019" />
            <ImageCard route="projects/tempist" image={login}
            textEnabled clickable alt="Click to visit my Cube project page"
-           text="Tempist | Spring 2019" classname="alt-hover-text"/>
+           text="Tempist | Spring 2019" classname="alt-text-color"/>
           <ImageCard route="projects/hopper" image={final}
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Hopper | Fall 2018"/>

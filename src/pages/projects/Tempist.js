@@ -15,13 +15,13 @@ export default class Tempest extends Component {
         <div className="Tempist">
           <div className="image_text">
             <ImageCard alt="The login page for Tempist"
-              size="4x6" image={login}
+              size="4x6" image={login} classname="alt-text-color"
               textEnabled text="The login page for Tempist"/>
             {t1}
           </div>
           <div className="image_text">
             <ImageCard alt="The Gantt Chart view of tasks on the page"
-              size="4x6" image={gantt}
+              size="4x6" image={gantt} classname="alt-text-color"
               textEnabled text="The Gantt Chart of tasks was one of my biggest contributions to the project"/>
             {t2}
           </div>

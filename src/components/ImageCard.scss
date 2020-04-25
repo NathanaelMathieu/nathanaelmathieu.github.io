@@ -46,7 +46,7 @@
         @extend .Clickable:hover;
         @include neuShadow(4px, 1);
         cursor: pointer;
-        &.alt-hover-text {
+        &.alt-text-color {
           @extend .Clickable:active;
           color: $text;
         }
@@ -59,7 +59,7 @@
         opacity: 1;
       }
     }
-    &.alt-hover-text {
+    &.alt-text-color {
       @extend .ImageCard;
       .text {
         color: $text;
