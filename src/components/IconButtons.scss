@@ -5,13 +5,13 @@
   padding: 1vw;
   border-radius: 12px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 15%;
-  min-width: 180px;
+  min-width: 300px;
   justify-content: center;
   a {
     div svg {
-      color: $accent;
+      color: inherit;
     }
     overflow: hidden;
     border-radius: 10px;
@@ -26,7 +26,7 @@
   a:active{
     @include neuShadow(4px, 1);
     div svg {
-      color: $main;
+      color: inherit;
     }
   }
 }

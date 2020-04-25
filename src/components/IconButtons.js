@@ -1,10 +1,11 @@
 /* eslint-disable quote-props */
 import "./IconButtons.scss";
+import { IoIosPaper, IoMdMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 import { IconContext } from "react-icons";
-import { IoMdMail } from "react-icons/io";
 import React from "react";
+import resume from "../Resume.pdf";
 
 function styleIcon(IconComponent, route) {
   return (
@@ -36,6 +37,10 @@ function IconButtons() {
       {styleIcon(
         FaLinkedin,
         "https://www.linkedin.com/in/nathanaelmathieu/"
+      )}
+      {styleIcon(
+        IoIosPaper,
+        resume
       )}
     </div>;
 }
