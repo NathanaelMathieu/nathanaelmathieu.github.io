@@ -26,6 +26,7 @@
 
       text-align: right;
       font-size: medium;
+      color: $text-alt;
 
       visibility: hidden;
       opacity: 0;
@@ -37,23 +38,28 @@
       @extend .ImageCard;
       @include neuShadow(2px, 0);
     }
-    &.Clickable:hover{
+    &.Clickable:hover {
       @extend .ImageCard;
       @include neuShadow(4px, 0);
       cursor: pointer;
     }
-    &.Clickable:active{
+    &.Clickable:active {
       @extend .ImageCard;
       @include neuShadow(4px, 1);
       cursor: pointer;
     }
-  }
-}
-
-
-.ImageCard:hover {
-  .text {
-    visibility: visible;
-    opacity: 1;
+    &:hover {
+      @extend .ImageCard;
+      .text {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    &.alt-hover-text {
+      @extend .ImageCard;
+      .text {
+        color: $text;
+      }
+    }
   }
 }

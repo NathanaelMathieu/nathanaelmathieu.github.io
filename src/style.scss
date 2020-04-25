@@ -19,9 +19,13 @@ $blue-pale-transparent: #1d6a9a4d;
 $main: #b4f3ec;
 $main-dark: darken($main, 20);
 $main-light: lighten($main, 20);
+
 $accent: #243e42;
 $accent-dark: darken($accent, 0);
 $accent-light: lighten($accent, 20);
+
+$text: $accent;
+$text-alt: $main;
 
 //Other Variables
 $header-height: 50px;
@@ -65,15 +69,15 @@ $header-height: 50px;
   }
 }
 
-@mixin neuShadow($size, $down) { //top left light
+@mixin neuShadow($size, $down) { //top-left light source
   @if $down == 0 {
     background-color: $main;
-    color: $accent;
+    color: $text;
     box-shadow: $size $size calc(#{$size} * 2) $main-dark,
                 calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $main-light;
   } @else {
     background-color: $accent;
-    color: $main;
+    color: $text-alt;
     box-shadow: inset $size $size calc(#{$size} * 2) $accent-dark,
                 inset calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
   }
@@ -81,14 +85,16 @@ $header-height: 50px;
 
 //global styles is applied to body in index.scss
 @mixin globalStyles(){
-  color: $accent;
+  color: $text;
   a:link {
-    color: $accent;
-    @include neuShadow(2px,0);
+    color: $text;
+    border-radius: 5px;
+    padding: 2px;
+    @include neuShadow(4px,0);
     text-decoration: none;
   }
   a:visited{
-    color: $accent;
+    color: $text;
     @include neuShadow(2px,0);
   }
   a:active{
