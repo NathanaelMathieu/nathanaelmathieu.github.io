@@ -22,7 +22,7 @@ export default class Tempest extends Component {
           <div className="image_text">
             <ImageCard alt="The Gantt Chart view of tasks on the page"
               size="4x6" image={gantt} classname="alt-text-color"
-              textEnabled text="The Gantt Chart of tasks was one of my biggest contributions to the project"/>
+              textEnabled text="The Gantt Chart view"/>
             {t2}
           </div>
         </div>
