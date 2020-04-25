@@ -27,13 +27,13 @@ export default class ImageCard extends Component {
   }
 
   render() {
-    const { route, alt } = this.props;
+    const { route, alt, classname } = this.props;
     const image = this.getImage(this.props);
 
     if (this.props.clickable) {
       return (
         <div className="wrapper">
-          <Link className="ImageCard Clickable"
+          <Link className={`ImageCard Clickable ${classname}`}
          onClick={this.handleOnClick} to={route}>
             <img className="image" src={image}
             alt={alt}></img>
@@ -45,7 +45,7 @@ export default class ImageCard extends Component {
 
     return (
       <div className="wrapper">
-        <div className="ImageCard"
+        <div className={`ImageCard ${classname}`}
         onClick={this.handleOnClick} to={route}>
           <img className="image" src={image}
           alt={alt}></img>
@@ -58,6 +58,7 @@ export default class ImageCard extends Component {
 
 ImageCard.propTypes = {
   "alt": PropTypes.string.isRequired,
+  "classname": PropTypes.string,
   "clickable": PropTypes.bool,
   "image": PropTypes.object,
   "route": PropTypes.string,
@@ -69,6 +70,7 @@ ImageCard.propTypes = {
 
 ImageCard.defaultProps = {
   "clickable": false,
+  "classname": "",
   "route": "",
   "size": "4x6",
   "text": "This project is really cool!",
