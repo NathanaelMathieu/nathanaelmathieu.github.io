@@ -7,8 +7,22 @@
   line-height: 150%;
 }
 
-.heading {
+.neumorphic {
+  @include neuShadow(0px, 0);
+  padding: 0 20px 0 20px;
+  border-radius: 12px;
+}
+
+.small {
+  @extend .body;
   font-size: 18px;
+}
+
+.heading {
+  @extend .body;
+  text-indent: unset;
+  font-size: 18px;
+  font-weight: 1000;
   @media only screen and (min-width: 350px){
     font-size: calc((11vw - 15px) * .75);
   }
