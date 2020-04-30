@@ -1,7 +1,7 @@
 import "./MainPage.scss";
-import { IconButtons, Layout, Text } from "../components/";
+import { IconButtons, Text } from "../components/";
 import React, { Component } from "react";
-import { aboutMeText } from "./Text/aboutText.js";
+import { Projects } from "./";
 import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
 
 const intro =
@@ -21,6 +21,10 @@ export default class MainPage extends Component {
               <Text class="small neumorphic" text={intro}/>
               <IconButtons/>
             </div>
+          </div>
+          <div>
+            <Text class="heading neumorphic" text = "Projects"/>
+            <Projects/>
           </div>
         </div>
   );

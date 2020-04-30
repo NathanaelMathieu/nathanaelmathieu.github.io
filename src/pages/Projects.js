@@ -18,7 +18,6 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <Layout>
         <div className="Projects">
           <ImageCard route="projects/template" image={contact}
            textEnabled clickable alt="Click to visit my Cube project page"
@@ -45,7 +44,6 @@ export default class Projects extends Component {
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Robot Tag | Spring 2018"/>
         </div>
-      </Layout>
     );
   }
 }
