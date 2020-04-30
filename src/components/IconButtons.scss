@@ -1,13 +1,13 @@
 @import "src/style.scss";
 
 .IconButtons {
-  @include neuShadow(1px, 0);
+  @include neuShadow(0px, 0);
   padding: 1vw;
   border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 15%;
-  min-width: 300px;
+  width: 300px;
   justify-content: center;
   a {
     div svg {
