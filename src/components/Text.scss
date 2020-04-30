@@ -21,14 +21,8 @@
 .heading {
   @extend .body;
   text-indent: unset;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 1000;
-  @media only screen and (min-width: 350px){
-    font-size: calc((11vw - 15px) * .75);
-  }
-  @media only screen and (min-width: 510px){
-    font-size: calc(#{$header-height} * 0.75);
-  }
   font-family: $raleway;
   text-align: center;
   line-height: 0;
