@@ -43,11 +43,10 @@
         cursor: pointer;
       }
       &:active {
-        @extend .Clickable:hover;
+        @extend .Clickable;
         @include neuShadow(4px, 1);
         cursor: pointer;
         &.alt-text-color {
-          @extend .Clickable:active;
           color: $text;
         }
       }
