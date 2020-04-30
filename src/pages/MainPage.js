@@ -1,8 +1,11 @@
-import "./About.scss";
+import "./MainPage.scss";
 import { ImageCard, Layout, Text } from "../components/";
 import React, { Component } from "react";
 import { aboutMeText } from "./Text/aboutText.js";
 import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
+
+const intro =
+  `My name is Nate and I use he/him pronouns. I am a Computer Science Major and Integrated Design, Engineering, and Applied Sciences Minor in the Class of 2020 at Wesleyan University. I am looking for an Entry-Level Python Full Stack Software Engineering Job.`;
 
 export default class MainPage extends Component {
   componentDidMount() {
@@ -11,16 +14,15 @@ export default class MainPage extends Component {
 
   render() {
     return (
-        <div className="About">
-            <div className="profile_picture">
-                <ImageCard alt="My professional photo"
-                size="square" image={professionalPhoto}/>
+        <div className="MainPage">
+          <div id="about">
+            <div id="contact">
+              <Text class="heading" text="Nathanael Mathieu"/>
+              <Text text={intro}/>
+              {/* {aboutMeText} */}
             </div>
-            <div className="profile_text">
-                <Text class="heading" text="Nathanael Mathieu"/>
-                {aboutMeText}
-            </div>
+          </div>
         </div>
-    );
+  );
   }
 }
