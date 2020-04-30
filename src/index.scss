@@ -3,27 +3,19 @@
 body {
   margin: 0;
   font-family: $montserrat;
-
-  background: url(resources/sunset.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: $text;
+  background: $main;
 
   a:link {
-    color: $text;
+    @include neuShadow(0px,1);
     border-radius: 5px;
     padding: 2px;
-    @include neuShadow(4px,0);
     text-decoration: none;
   }
   a:visited{
-    color: $text;
-    @include neuShadow(2px,0);
+    @include neuShadow(0px,1);
   }
   a:active{
-    @include neuShadow(2px,1);
+    @include neuShadow(0px,0);
   }
 }
 

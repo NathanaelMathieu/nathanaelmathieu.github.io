@@ -1,6 +1,12 @@
 @import "src/style.scss";
 
 .MainPage {
+  background: url(../resources/oceanBlur25.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   display: grid;
   grid-template-rows: 100vh 1fr;
   grid-gap: 20vh;
