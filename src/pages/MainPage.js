@@ -1,5 +1,5 @@
 import "./MainPage.scss";
-import { ImageCard, Layout, Text } from "../components/";
+import { IconButtons, Layout, Text } from "../components/";
 import React, { Component } from "react";
 import { aboutMeText } from "./Text/aboutText.js";
 import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
@@ -17,9 +17,9 @@ export default class MainPage extends Component {
         <div className="MainPage">
           <div id="about">
             <div id="contact">
-              <Text class="heading" text="Nathanael Mathieu"/>
-              <Text text={intro}/>
-              {/* {aboutMeText} */}
+              <Text class="heading neumorphic" text="Nathanael Mathieu"/>
+              <Text class="small neumorphic" text={intro}/>
+              <IconButtons/>
             </div>
           </div>
         </div>
