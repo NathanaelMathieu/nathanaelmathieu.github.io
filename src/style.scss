@@ -17,12 +17,12 @@ $blue-pale-transparent: #1d6a9a4d;
 
 //Theme Colors
 $main: #b4f3ec;
-$main-dark: darken($main, 20);
-$main-light: lighten($main, 20);
+$main-dark: darken($main, 50);
+$main-light: lighten($main, 50);
 
-$accent: #243e42;
-$accent-dark: darken($accent, 0);
-$accent-light: lighten($accent, 20);
+$accent: #202c2e;
+$accent-dark: darken($accent, 50);
+$accent-light: lighten($accent, 50);
 
 $text: $accent;
 $text-alt: $main;

@@ -6,16 +6,16 @@ body {
   background: $main;
 
   a:link {
-    @include neuShadow(0px,1);
+    @include neuShadow(2px,0);
     border-radius: 5px;
     padding: 2px;
     text-decoration: none;
   }
   a:visited{
-    @include neuShadow(0px,1);
+    @include neuShadow(2px,0);
   }
   a:active{
-    @include neuShadow(0px,0);
+    @include neuShadow(2px,1);
   }
 }
 
