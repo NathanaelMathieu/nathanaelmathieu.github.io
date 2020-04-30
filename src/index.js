@@ -1,9 +1,8 @@
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { About, Contact } from "./pages/";
+import { About, Contact, MainPage, NotFound, Projects } from "./pages";
 import { Basinski, Cube, Hopper, Marble, Pacman, Tag, Tempist, Template }
   from "./pages/projects/";
-import { NotFound, Projects } from "./pages";
 import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -12,7 +11,7 @@ import ReactDOM from "react-dom";
 const routing =
   <Router>
     <Switch>
-      <Route exact path="/" component={About} />
+      <Route exact path="/" component={MainPage} />
       <Route exact path="/about" component={About} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/projects" component={Projects} />

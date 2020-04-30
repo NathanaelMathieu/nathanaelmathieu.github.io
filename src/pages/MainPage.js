@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { aboutMeText } from "./Text/aboutText.js";
 import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
 
-export default class About extends Component {
+export default class MainPage extends Component {
   componentDidMount() {
     document.title = "About Me | Nathanael Mathieu";
   }
