@@ -2,9 +2,29 @@
 
 body {
   margin: 0;
-  background: $main;
   font-family: $montserrat;
-  @include globalStyles();
+
+  background: url(resources/sunset.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $text;
+
+  a:link {
+    color: $text;
+    border-radius: 5px;
+    padding: 2px;
+    @include neuShadow(4px,0);
+    text-decoration: none;
+  }
+  a:visited{
+    color: $text;
+    @include neuShadow(2px,0);
+  }
+  a:active{
+    @include neuShadow(2px,1);
+  }
 }
 
 #root {
