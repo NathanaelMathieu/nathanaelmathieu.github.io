@@ -11,18 +11,16 @@ export default class MainPage extends Component {
 
   render() {
     return (
-      <Layout>
         <div className="About">
-          <div className="profile_picture">
-            <ImageCard alt="My professional photo"
-              size="square" image={professionalPhoto}/>
-          </div>
-          <div className="profile_text">
-            <Text class="heading" text="Nathanael Mathieu"/>
-            {aboutMeText}
-          </div>
+            <div className="profile_picture">
+                <ImageCard alt="My professional photo"
+                size="square" image={professionalPhoto}/>
+            </div>
+            <div className="profile_text">
+                <Text class="heading" text="Nathanael Mathieu"/>
+                {aboutMeText}
+            </div>
         </div>
-      </Layout>
     );
   }
 }
