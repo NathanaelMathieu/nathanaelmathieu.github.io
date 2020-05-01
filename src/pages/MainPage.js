@@ -1,10 +1,10 @@
 import "./MainPage.scss";
-import { IconButtons, Text } from "../components/";
+import { IconButtons, Layout, Text } from "../components/";
 import React, { Component } from "react";
 import { Projects } from "./";
 
 const intro =
-  `My name is Nate and I use he/him pronouns. I am a Computer Science Major and Integrated Design, Engineering, and Applied Sciences Minor in the Class of 2020 at Wesleyan University. I am looking for an Entry-Level Python Full Stack Software Engineering Job.`;
+  `Computer Science Major and Integrated Design, Engineering, and Applied Sciences Minor in the Class of 2020 at Wesleyan University looking for an Entry-Level Full Stack/Frontend/Backend Software Engineering Job.`;
 
 export default class MainPage extends Component {
   componentDidMount() {
@@ -13,6 +13,7 @@ export default class MainPage extends Component {
 
   render() {
     return (
+      <Layout>
         <div className="MainPage">
           <div id="about">
             <div id="contact">
@@ -26,6 +27,7 @@ export default class MainPage extends Component {
             <Projects/>
           </div>
         </div>
+      </Layout>
   );
   }
 }
