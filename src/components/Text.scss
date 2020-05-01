@@ -5,6 +5,7 @@
   font-size: calc(1rem + 0.3vw);
   text-indent: 2em;
   line-height: 150%;
+  color: $text;
 }
 
 .neumorphic {
@@ -26,5 +27,5 @@
   font-weight: 1000;
   font-family: $raleway;
   text-align: center;
-  line-height: 0;
+  line-height: .5;
 }

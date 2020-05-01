@@ -2,7 +2,6 @@ import "./MainPage.scss";
 import { IconButtons, Text } from "../components/";
 import React, { Component } from "react";
 import { Projects } from "./";
-import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
 
 const intro =
   `My name is Nate and I use he/him pronouns. I am a Computer Science Major and Integrated Design, Engineering, and Applied Sciences Minor in the Class of 2020 at Wesleyan University. I am looking for an Entry-Level Python Full Stack Software Engineering Job.`;
@@ -22,7 +21,7 @@ export default class MainPage extends Component {
               <IconButtons/>
             </div>
           </div>
-          <div>
+          <div id="projects">
             <Text class="heading neumorphic" text = "Projects"/>
             <Projects/>
           </div>

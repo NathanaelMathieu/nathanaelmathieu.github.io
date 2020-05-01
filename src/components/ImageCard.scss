@@ -2,7 +2,7 @@
 
 .wrapper {
   .ImageCard {
-    @include neuShadow(10px,1);
+    @include neuShadow(2px,1);
     padding: 3%;
     display: flex;
     align-items: center;
