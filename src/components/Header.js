@@ -1,7 +1,7 @@
 import "./Header.scss";
 import React, { Component } from "react";
-import { Text } from "./";
 import { Link } from "react-router-dom";
+import { Text } from "./";
 
 export default class Header extends Component {
   render() {
