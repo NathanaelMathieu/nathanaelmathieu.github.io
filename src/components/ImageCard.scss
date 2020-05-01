@@ -36,15 +36,15 @@
     }
     &.Clickable {
       @extend .ImageCard;
-      @include neuShadow(2px);
+      @include neuShadow(1px);
       &:hover {
         @extend .Clickable;
-        @include neuShadow(4px);
+        @include neuShadow(2px);
         cursor: pointer;
       }
       &:active {
         @extend .Clickable;
-        @include neuShadow(4px, $down: true);
+        @include neuShadow(2px, $down: true);
         cursor: pointer;
         &.alt-text-color {
           color: $text;
