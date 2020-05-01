@@ -69,15 +69,23 @@ $header-height: 50px;
   }
 }
 
-@mixin neuShadow($size, $down: false) { //top-left light source
-  @if $down == false {
+@mixin themeColors($invert: false) {
+  @if $invert == false {
     background-color: $main;
     color: $text;
-    box-shadow: $size $size calc(#{$size} * 2) $main-dark,
-                calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $main-light;
   } @else {
     background-color: $accent;
     color: $text-alt;
+  }
+}
+
+@mixin neuShadow($size, $down: false) { //top-left light source
+  @if $down == false {
+    @include themeColors();
+    box-shadow: $size $size calc(#{$size} * 2) $main-dark,
+                calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $main-light;
+  } @else {
+    @include themeColors($invert: true);
     box-shadow: inset $size $size calc(#{$size} * 2) $accent-dark,
                 inset calc(0px - #{$size}) calc(0px - #{$size}) calc(#{$size} * 2) $accent-light;
   }
