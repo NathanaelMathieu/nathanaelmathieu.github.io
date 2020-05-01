@@ -1,11 +1,11 @@
 @import "src/style.scss";
 
-.body {
+.Text {
   font-family: $montserrat;
-  font-size: calc(1rem + 0.3vw);
-  text-indent: 2em;
-  line-height: 150%;
   color: $text;
+  border-radius: 12px;
+  margin: 5px 0;
+  padding: 0 10px;
 }
 
 .theme {
@@ -14,27 +14,32 @@
 
 .transparent-theme {
   @include themeColors($alpha: 0.8);
-  border-radius: 12px;
-  margin: 5px 0;
-  padding: 0 10px;
 }
 
 .neumorphic {
-  @extend .body;
+  @extend .theme;
   padding: 0 20px 0 20px;
   border-radius: 12px;
 }
 
+.body {
+  @extend .Text;
+  font-size: calc(1rem + 0.3vw);
+  text-indent: 2em;
+  line-height: 150%;
+}
+
 .small {
+  @extend .Text;
   font-size: 18px;
 }
 
 .heading {
-  @extend .body;
+  @extend .Text;
+  font-family: $raleway;
   text-indent: unset;
   font-size: 30px;
   font-weight: 1000;
-  font-family: $raleway;
   text-align: center;
   line-height: .5;
 }
