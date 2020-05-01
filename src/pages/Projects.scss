@@ -1,6 +1,7 @@
 @import "src/style.scss";
 
 .Projects {
+  @include themeColors($alpha: 0.8);
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 2vw;
