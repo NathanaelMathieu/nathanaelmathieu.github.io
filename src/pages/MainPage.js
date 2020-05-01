@@ -16,13 +16,13 @@ export default class MainPage extends Component {
         <div className="MainPage">
           <div id="about">
             <div id="contact">
-              <Text class="heading neumorphic" text="Nathanael Mathieu"/>
-              <Text class="small neumorphic" text={intro}/>
+              <Text class="heading transparent-theme" text="Nathanael Mathieu"/>
+              <Text class="small transparent-theme" text={intro}/>
               <IconButtons/>
             </div>
           </div>
           <div id="projects">
-            <Text class="heading neumorphic" text = "Projects"/>
+            <Text class="heading transparent-theme" text = "Projects"/>
             <Projects/>
           </div>
         </div>

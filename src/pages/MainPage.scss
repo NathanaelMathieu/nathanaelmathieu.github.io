@@ -16,15 +16,16 @@
     align-items: center;
     justify-content: flex-end;
     #contact {
-      padding-right: 5vw;
+      padding: calc(5vw - 9px);
       display: flex;
       flex-direction: column;
       min-width: 340px;
       width: 35vw;
       align-items: center;
       > * {
-        margin: 10px;
-        background-color: rgba($main, 0.8);;
+        border-radius: 12px;
+        margin: 5px 0 5px 0;
+        padding: 10px;
       }
     }
   }

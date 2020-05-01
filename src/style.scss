@@ -69,12 +69,12 @@ $header-height: 50px;
   }
 }
 
-@mixin themeColors($invert: false) {
+@mixin themeColors($invert: false, $alpha: 1) {
   @if $invert == false {
-    background-color: $main;
+    background-color: rgba($main, $alpha);
     color: $text;
   } @else {
-    background-color: $accent;
+    background-color: rgba($accent, $alpha);
     color: $text-alt;
   }
 }
