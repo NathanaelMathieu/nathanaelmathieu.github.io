@@ -1,9 +1,15 @@
 @import "src/style.scss";
 
 body {
+  background-color: $main;
+  background: url(./resources/moonrise.JPG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
   margin: 0;
   font-family: $montserrat;
-  background: $main;
 
   a:link {
     @include neuShadow(2px);
@@ -17,6 +23,7 @@ body {
   a:active{
     @include neuShadow(2px, $down: true);
   }
+
 }
 
 #root {
