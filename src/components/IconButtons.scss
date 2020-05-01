@@ -1,7 +1,7 @@
 @import "src/style.scss";
 
 .IconButtons {
-  @include neuShadow(0px);
+  @include themeColors();
   padding: 1vw;
   border-radius: 12px;
   display: grid;

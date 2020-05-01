@@ -10,7 +10,7 @@
 
 .neumorphic {
   @extend .body;
-  @include neuShadow(0px);
+  @include themeColors();
   padding: 0 20px 0 20px;
   border-radius: 12px;
 }
