@@ -1,7 +1,7 @@
 @import "src/style.scss";
 
 .IconButtons {
-  @include neuShadow(0px, 0);
+  @include neuShadow(0px);
   padding: 1vw;
   border-radius: 12px;
   display: grid;
@@ -16,15 +16,15 @@
     overflow: hidden;
     border-radius: 10px;
     padding: 8px 30px 6px 8px;
-    @include neuShadow(2px, 0);
+    @include neuShadow(2px);
   }
   a:hover {
-    @include neuShadow(3px, 0);
+    @include neuShadow(3px);
     // filter:  drop-shadow(0 0 4px rgba(0,0,0,0.2));
     cursor: pointer;
   }
   a:active{
-    @include neuShadow(4px, 1);
+    @include neuShadow(4px, $down: true);
     div svg {
       color: inherit;
     }

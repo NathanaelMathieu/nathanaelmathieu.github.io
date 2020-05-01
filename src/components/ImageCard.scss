@@ -2,7 +2,7 @@
 
 .wrapper {
   .ImageCard {
-    @include neuShadow(2px,1);
+    @include neuShadow(2px, $down: true);
     padding: 3%;
     display: flex;
     align-items: center;
@@ -36,15 +36,15 @@
     }
     &.Clickable {
       @extend .ImageCard;
-      @include neuShadow(2px, 0);
+      @include neuShadow(2px);
       &:hover {
         @extend .Clickable;
-        @include neuShadow(4px, 0);
+        @include neuShadow(4px);
         cursor: pointer;
       }
       &:active {
         @extend .Clickable;
-        @include neuShadow(4px, 1);
+        @include neuShadow(4px, $down: true);
         cursor: pointer;
         &.alt-text-color {
           color: $text;

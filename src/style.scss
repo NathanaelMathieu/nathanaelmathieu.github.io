@@ -69,8 +69,8 @@ $header-height: 50px;
   }
 }
 
-@mixin neuShadow($size, $down) { //top-left light source
-  @if $down == 0 {
+@mixin neuShadow($size, $down: false) { //top-left light source
+  @if $down == false {
     background-color: $main;
     color: $text;
     box-shadow: $size $size calc(#{$size} * 2) $main-dark,
