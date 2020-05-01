@@ -13,21 +13,19 @@ export default class MainPage extends Component {
 
   render() {
     return (
-      <Layout>
-        <div className="MainPage">
-          <div id="about">
-            <div id="contact">
-              <Text class="heading transparent-theme" text="Nathanael Mathieu"/>
-              <Text class="small transparent-theme" text={intro}/>
-              <IconButtons/>
-            </div>
-          </div>
-          <div id="projects">
-            <Text class="heading transparent-theme" text = "Projects"/>
-            <Projects/>
+      <div className="MainPage">
+        <div id="about">
+          <div id="contact">
+            <Text class="heading transparent-theme" text="Nathanael Mathieu"/>
+            <Text class="small transparent-theme" text={intro}/>
+            <IconButtons/>
           </div>
         </div>
-      </Layout>
+        <div id="projects">
+          <Text class="heading transparent-theme" text = "Projects"/>
+          <Projects/>
+        </div>
+      </div>
   );
   }
 }

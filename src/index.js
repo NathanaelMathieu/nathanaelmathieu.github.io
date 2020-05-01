@@ -12,17 +12,14 @@ const routing =
   <Router>
     <Switch>
       <Route exact path="/" component={MainPage} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/projects" component={Projects} />
-      <Route exact path="/projects/basinski" component={Basinski} />
-      <Route exact path="/projects/cube" component={Cube} />
-      <Route exact path="/projects/hopper" component={Hopper} />
-      <Route exact path="/projects/marble" component={Marble} />
-      <Route exact path="/projects/pacman" component={Pacman} />
-      <Route exact path="/projects/tag" component={Tag} />
-      <Route exact path="/projects/tempist" component={Tempist} />
-      <Route exact path="/projects/template" component={Template} />
+      <Route exact path="/basinski" component={Basinski} />
+      <Route exact path="/cube" component={Cube} />
+      <Route exact path="/hopper" component={Hopper} />
+      <Route exact path="/marble" component={Marble} />
+      <Route exact path="/pacman" component={Pacman} />
+      <Route exact path="/tag" component={Tag} />
+      <Route exact path="/tempist" component={Tempist} />
+      <Route exact path="/template" component={Template} />
       <Route component={NotFound} />
     </Switch>
   </Router>;

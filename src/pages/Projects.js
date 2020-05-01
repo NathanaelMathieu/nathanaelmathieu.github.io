@@ -19,28 +19,28 @@ export default class Projects extends Component {
   render() {
     return (
         <div className="Projects">
-          <ImageCard route="projects/template" image={contact}
+          <ImageCard route="template" image={contact}
            textEnabled clickable alt="Click to visit my Cube project page"
            text="IDEAS Portfolio Template | Spring 2020"/>
-          <ImageCard route="projects/basinski" image={b3} classname="alt-text-color"
+          <ImageCard route="basinski" image={b3} classname="alt-text-color"
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Basinski | Fall 2019"/>
-          <ImageCard image={cubeIso1} route="projects/cube"
+          <ImageCard image={cubeIso1} route="cube"
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Cube | Fall 2019"/>
-          <ImageCard route="projects/pacman" image={multi} classname="alt-text-color"
+          <ImageCard route="pacman" image={multi} classname="alt-text-color"
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Pacman Project | Fall 2019" />
-           <ImageCard route="projects/tempist" image={login}
+           <ImageCard route="tempist" image={login}
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Tempist | Spring 2019" />
-          <ImageCard route="projects/hopper" image={final}
+          <ImageCard route="hopper" image={final}
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Hopper | Fall 2018"/>
-          <ImageCard route="projects/marble" image={kids}
+          <ImageCard route="marble" image={kids}
             textEnabled clickable alt="Click to visit my Cube project page"
             text="Marble Run | Fall 2018"/>
-          <ImageCard route="projects/tag" image={side}
+          <ImageCard route="tag" image={side}
            textEnabled clickable alt="Click to visit my Cube project page"
            text="Robot Tag | Spring 2018"/>
         </div>
