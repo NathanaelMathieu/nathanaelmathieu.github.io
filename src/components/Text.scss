@@ -8,9 +8,16 @@
   color: $text;
 }
 
+.theme {
+  @include themeColors();
+}
+
+.transparent-theme {
+  @include themeColors($alpha: 0.8);
+}
+
 .neumorphic {
   @extend .body;
-  @include themeColors();
   padding: 0 20px 0 20px;
   border-radius: 12px;
 }

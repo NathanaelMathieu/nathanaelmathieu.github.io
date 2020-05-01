@@ -23,7 +23,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  "class": "body",
+  "class": "body theme",
   "preformatted": null,
   "text": ""
 };
