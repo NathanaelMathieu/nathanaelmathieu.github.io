@@ -1,5 +1,5 @@
 import "./MainPage.scss";
-import { IconButtons, Layout, Text } from "../components/";
+import { IconButtons, Text } from "../components/";
 import React, { Component } from "react";
 import { Projects } from "./";
 

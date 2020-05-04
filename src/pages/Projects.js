@@ -1,6 +1,6 @@
 import "./Projects.scss";
-import React, { Component } from "react";
 import { ImageCard } from "../components/";
+import React from "react";
 import b3 from "../resources/projects/basinski/b3.jpg";
 import contact from "../resources/projects/template/contact.png";
 import cubeIso1 from "../resources/projects/cube/iso1.jpg";
