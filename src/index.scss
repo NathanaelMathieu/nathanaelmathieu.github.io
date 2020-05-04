@@ -1,15 +1,9 @@
 @import "src/style.scss";
 
 body {
-  background-color: $main;
-  background: url(./resources/moonrise.JPG) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
   margin: 0;
   font-family: $montserrat;
+  background-color: black;
 
   a:link {
     @include neuShadow(2px);
@@ -24,6 +18,21 @@ body {
     @include neuShadow(2px, $down: true);
   }
 
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(resources/moonrise.JPG) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 #root {
