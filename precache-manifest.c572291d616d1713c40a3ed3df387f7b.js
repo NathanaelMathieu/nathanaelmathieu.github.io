@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27e8aca7726df3b9000679fc24c7f152",
+    "revision": "66752c4665079ac0f098015a1f84093d",
     "url": "https://nathanaelmathieu.github.io/pro-site/index.html"
   },
   {
-    "revision": "80a95b80da883d5efa2f",
-    "url": "https://nathanaelmathieu.github.io/pro-site/static/css/main.4ce90ba6.chunk.css"
+    "revision": "b42a6965cc405c53c748",
+    "url": "https://nathanaelmathieu.github.io/pro-site/static/css/main.2cbd0de9.chunk.css"
   },
   {
     "revision": "9be53ddd5f629597f761",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://nathanaelmathieu.github.io/pro-site/static/js/2.c61ba240.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80a95b80da883d5efa2f",
+    "revision": "b42a6965cc405c53c748",
     "url": "https://nathanaelmathieu.github.io/pro-site/static/js/main.fd53c2bd.chunk.js"
   },
   {
