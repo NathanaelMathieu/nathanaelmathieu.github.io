@@ -3,7 +3,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Basinski, Cube, Hopper, Marble, Pacman, Tag, Tempist, Template }
   from "./pages/projects/";
 import { MainPage, NotFound } from "./pages";
-import { Route, HashRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 
