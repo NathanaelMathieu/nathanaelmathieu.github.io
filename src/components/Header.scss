@@ -2,33 +2,18 @@
 
 
 .Header {
-  @include themeColors($alpha: 0.6);
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
-  text-decoration: none;
-  font-family: $raleway;
   
   padding: 10px;
-  height: $header-height;
-  width: fit-content;
+  * {
+    line-height: 0;
+  }
 
-  list-style-type: none;
-  a {
-    text-decoration: none;
-    padding: 3px 5px 2px 5px;
-    border-radius: 8px;
-    @include neuShadow(2px);
-  }
-  a:hover {
-    @include neuShadow(5px);
-    cursor: pointer;
-  }
-  a:active {
-    @include neuShadow(5px, $down: true);
-    cursor: pointer;
+  > * :active {
+    color: $text-alt;
   }
 }
