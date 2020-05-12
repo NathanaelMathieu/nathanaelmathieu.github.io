@@ -4,11 +4,8 @@ import React from "react";
 import b3 from "../resources/projects/basinski/b3.jpg";
 import contact from "../resources/projects/template/contact.png";
 import cubeIso1 from "../resources/projects/cube/iso1.jpg";
-import final from "../resources/projects/hopper/final.jpg";
-import kids from "../resources/projects/marble/kids.png";
 import login from "../resources/projects/tempist/login.png";
 import multi from "../resources/projects/pacman/multi.gif";
-import side from "../resources/projects/tag/side.jpg";
 
 
 function Projects() {
@@ -29,15 +26,6 @@ function Projects() {
         <ImageCard route="tempist" image={login}
         textEnabled clickable alt="Click to visit my Cube project page"
         text="Tempist | Spring 2019" />
-      <ImageCard route="hopper" image={final}
-        textEnabled clickable alt="Click to visit my Cube project page"
-        text="Hopper | Fall 2018"/>
-      <ImageCard route="marble" image={kids}
-        textEnabled clickable alt="Click to visit my Cube project page"
-        text="Marble Run | Fall 2018"/>
-      <ImageCard route="tag" image={side}
-        textEnabled clickable alt="Click to visit my Cube project page"
-        text="Robot Tag | Spring 2018"/>
     </div>
   );
 }

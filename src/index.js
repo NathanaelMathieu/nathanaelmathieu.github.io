@@ -1,9 +1,10 @@
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { Basinski, Cube, Hopper, Marble, Pacman, Tag, Tempist, Template }
+import { Basinski, Cube, Pacman, Tempist, Template }
   from "./pages/projects/";
 import { MainPage, NotFound } from "./pages";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Redirect, Route, BrowserRouter as Router, Switch }
+  from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -14,13 +15,11 @@ const routing =
       <Route exact path="/" component={MainPage} />
       <Route exact path="/basinski" component={Basinski} />
       <Route exact path="/cube" component={Cube} />
-      <Route exact path="/hopper" component={Hopper} />
-      <Route exact path="/marble" component={Marble} />
       <Route exact path="/pacman" component={Pacman} />
-      <Route exact path="/tag" component={Tag} />
       <Route exact path="/tempist" component={Tempist} />
       <Route exact path="/template" component={Template} />
-      <Route component={NotFound} />
+      <Route exact path="/404" component={NotFound} />
+      <Redirect to="/404" />
     </Switch>
   </Router>;
 
