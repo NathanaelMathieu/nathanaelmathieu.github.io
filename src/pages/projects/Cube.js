@@ -1,17 +1,20 @@
 import "./Cube.scss";
 import { ImageCard, Layout } from "../../components/";
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { brick, hall, iso1, iso4, lights, side1 }
  from "../../resources/projects/cube/";
 import { t1, t2, t3, t4, t5, t6 } from "./Text/cubeText.js";
 
-export default class Cube extends Component {
-  componentDidMount() {
-    document.title = "The Cube | Nathanael Mathieu";
-  }
+function Cube() {
+  document.title = "Cube | Nathanael Mathieu";
+  useEffect(
+    () => {
+      window.scrollTo(0, 0);
+    },
+    []
+  );
 
-  render() {
-    return (
+return (
       <Layout>
         <div className="Cube">
           <div className="image_text">
@@ -54,4 +57,6 @@ export default class Cube extends Component {
       </Layout>
     );
   }
-}
+
+  export default Cube;
+

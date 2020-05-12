@@ -1,16 +1,19 @@
 import "./Basinski.scss";
 import { ImageCard, Layout } from "../../components";
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { b1, b2, b3, b4 } from "../../resources/projects/basinski";
 
 import { t1, t2, t3, t4 } from "./Text/basinskiText.js";
 
-export default class Basinski extends Component {
-  componentDidMount() {
+function Basinski() {
     document.title = "Basinski | Nathanael Mathieu";
-  }
+    useEffect(
+      () => {
+        window.scrollTo(0, 0);
+      },
+      []
+    );
 
-  render() {
     return (
       <Layout>
         <div className="Basinski">
@@ -41,5 +44,6 @@ export default class Basinski extends Component {
         </div>
       </Layout>
     );
-  }
 }
+
+export default Basinski;
