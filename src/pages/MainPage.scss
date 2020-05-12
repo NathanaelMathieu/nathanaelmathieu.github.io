@@ -2,8 +2,14 @@
 
 .MainPage {
   display: grid;
-  grid-template-rows: 100vh 1fr;
-  grid-gap: 20vh;
+  grid-template-rows: 150vmin 1fr;
+  gap: 20vmax;
+  align-items: center;
+  justify-items: center;
+  @media only screen and (min-width: 600px) {
+    justify-items: right;
+    grid-template-rows: 100vh 1fr;
+  }
   #about {
     display: flex;
     flex-direction: row;
@@ -13,7 +19,7 @@
       padding: calc(5vw - 9px);
       display: grid;
       grid-template-rows: repeat(3, auto);
-      grid-gap: 8px;
+      gap: 8px;
       min-width: 340px;
       width: 35vw;
       justify-items: center;
