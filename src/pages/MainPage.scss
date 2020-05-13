@@ -25,11 +25,13 @@
       justify-items: center;
     }
   }
-  #projects {
+  > #projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    :first-child {
+    width: 100%;
+    height: 100%;
+    > .heading {
       width: fit-content;
       height: fit-content;
     }

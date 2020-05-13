@@ -18,41 +18,31 @@ export default class ImageCard extends Component {
   return props.image;
   }
 
-  getText() {
-    if (this.props.textEnabled) {
-      return <p className="text">{this.props.text}</p>;
-    }
-
-    return <p/>;
-  }
-
   render() {
-    const { route, alt, classname } = this.props;
+    const { route, alt, classname, clickable, textEnabled, text } = this.props;
+    const overlay = textEnabled ? <div id="overlay"><div>{text}</div></div> : <div id="overlay"/>;
     const image = this.getImage(this.props);
 
-    if (this.props.clickable) {
+    if (clickable) {
       return (
-        <div className="wrapper">
-          <Link className={`ImageCard Clickable ${classname}`}
-         onClick={this.handleOnClick} to={route}>
-            <img className="image" src={image}
-            alt={alt}></img>
-            {this.getText()}
+        <div className={`ImageCard Clickable ${classname}`}>
+          <Link id="wrapper" onClick={this.handleOnClick} to={route}>
+            <img src={image} alt={alt}/>
+            {overlay}
           </Link>
         </div>
       );
     }
 
     return (
-      <div className="wrapper">
-        <div className={`ImageCard ${classname}`}
-        onClick={this.handleOnClick} to={route}>
-          <img className="image" src={image}
-          alt={alt}></img>
-          {this.getText()}
+      <div className={`ImageCard ${classname}`}>
+        <div id="wrapper">
+          <img src={image} alt={alt}/>
+          {overlay}
         </div>
       </div>
     );
+
   }
 }
 
@@ -69,8 +59,8 @@ ImageCard.propTypes = {
 
 
 ImageCard.defaultProps = {
-  "clickable": false,
   "classname": "",
+  "clickable": false,
   "route": "",
   "size": "4x6",
   "text": "This project is really cool!",
