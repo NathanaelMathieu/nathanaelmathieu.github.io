@@ -37,9 +37,9 @@ $header-height: 50px;
   align-items: center;
   justify-content: space-around;
   > * {
-    margin: 1%;
-    min-width: 330px;
-
+    margin-bottom: 1%;
+    min-width: 300px;
+    
     display: flex;
     flex-flow: row wrap;
     align-items: center;
