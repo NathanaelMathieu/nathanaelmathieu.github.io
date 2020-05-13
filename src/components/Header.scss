@@ -7,13 +7,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  
-  padding: 10px;
-  * {
-    line-height: 0;
-  }
 
-  * :active {
-    color: $text-alt;
+  padding: 10px;
+
+  > a:link {
+    @include neuShadow(2px);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  > a:visited{
+    @include neuShadow(2px);
+  }
+  > a:active{
+    @include neuShadow(2px, $down: true);
   }
 }
