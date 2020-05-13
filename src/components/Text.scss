@@ -1,6 +1,21 @@
 @import "src/style.scss";
 
 .Text {
+  
+
+  a:link {
+    @include neuShadow(2px);
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+  }
+  a:visited{
+    @include neuShadow(2px);
+  }
+  a:active{
+    @include neuShadow(2px, $down: true);
+  }
+  
   font-family: $montserrat;
   color: $text;
   border-radius: 12px;
