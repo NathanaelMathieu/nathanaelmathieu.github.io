@@ -4,23 +4,21 @@
   @include themeColors();
   padding: 1vw;
   border-radius: 12px;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 15%;
+  display: flex;
   width: 300px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   a {
+    align-self: center;
     div svg {
       color: inherit;
     }
-    overflow: hidden;
     border-radius: 10px;
-    padding: 8px 30px 6px 8px;
+    padding: 6px 6px 6px 7px;
     @include neuShadow(2px);
   }
   a:hover {
     @include neuShadow(3px);
-    // filter:  drop-shadow(0 0 4px rgba(0,0,0,0.2));
     cursor: pointer;
   }
   a:active{

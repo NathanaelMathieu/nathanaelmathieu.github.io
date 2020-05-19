@@ -16,9 +16,7 @@ function styleIcon(IconComponent, route) {
     >
       <IconContext.Provider value ={{ className: "icon",
       size: "2em" }}>
-        <div>
           <IconComponent/>
-        </div>
       </IconContext.Provider>
     </a>
   );
