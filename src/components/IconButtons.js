@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 import { IconContext } from "react-icons";
 import React from "react";
-import resume from "../Resume.pdf";
+import resume from "../Nathanael_Mathieu_Resume.pdf";
 
 function styleIcon(IconComponent, route) {
   return (
