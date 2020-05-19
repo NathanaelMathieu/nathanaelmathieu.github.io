@@ -30,7 +30,7 @@ function IconButtons() {
       )}
       {styleIcon(
         IoMdMail,
-        "mailto:nmathieu@wesleyan.edu"
+        "mailto:nathanael.eng.mathieu@gmail.com"
       )}
       {styleIcon(
         FaLinkedin,
