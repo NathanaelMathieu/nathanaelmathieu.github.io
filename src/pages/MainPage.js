@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { Projects } from "./";
 
 const intro =
-  `Computer Science Major and Integrated Design, Engineering, and Applied Sciences Minor in the Class of 2020 at Wesleyan University looking for an Entry-Level Full Stack/Frontend/Backend Software Engineering Job.`;
+  `Wesleyan University CS Major and Integrated Design, Engineering, and Applied Sciences Minor looking for an Entry-Level Software Engineering Job.`;
 
 export default class MainPage extends Component {
   componentDidMount() {
