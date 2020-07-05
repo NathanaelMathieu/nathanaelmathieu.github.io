@@ -38,7 +38,10 @@
 .body {
   @extend .Text;
   font-size: calc(1rem + 0.3vw);
-  text-indent: 2em;
+  text-indent: 0;
+  @media only screen and (min-width: 600px){
+    text-indent: 2em;
+  }
   line-height: 150%;
 }
 
