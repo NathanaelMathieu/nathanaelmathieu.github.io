@@ -2,7 +2,6 @@ import "./Header.scss";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
-import { Text } from "./";
 
 export default class Header extends Component {
   render() {
