@@ -7,12 +7,9 @@ import { t1, t2, t3, t4, t5, t6 } from "./Text/cubeText.js";
 
 function Cube() {
   document.title = "Cube | Nathanael Mathieu";
-  useEffect(
-    () => {
+  useEffect(() => {
       window.scrollTo(0, 0);
-    },
-    []
-  );
+    }, []);
 
 return (
       <Layout>
