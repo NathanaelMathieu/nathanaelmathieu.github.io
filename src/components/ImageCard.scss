@@ -71,7 +71,7 @@
   }
   &.alt-text-color {
     @extend .ImageCard;
-    .text {
+    #wrapper #overlay * {
       color: $text;
     }
   }
