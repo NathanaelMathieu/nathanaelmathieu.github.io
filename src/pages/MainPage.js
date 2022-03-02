@@ -5,7 +5,7 @@ import { Projects } from "./";
 import { professionalPhoto } from "../resources/";
 
 const intro =
-  `Rotational Analyst in PTC's Rotational Leadership Development Program - CS Track. Seeking a Full-Stack Software Developer role at PTC within Onshape. Open to other roles at Kepware and within the Velocity product group.`;
+  `Rotational Analyst in PTC's Rotational Leadership Development Program - CS Track. Seeking a Full-Stack Software Developer role at Onshape. Open to other roles at Kepware and within the Velocity product group.`;
 
 export default class MainPage extends Component {
   componentDidMount() {
