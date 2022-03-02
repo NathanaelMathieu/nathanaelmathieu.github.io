@@ -18,13 +18,13 @@ function Tempist() {
       <div className="Tempist">
         <div className="image_text">
           <ImageCard alt="The login page for Tempist"
-            size="4x6" image={login} classname="alt-text-color"
+            size="4x6" image={login}
             textEnabled text="The login page for Tempist"/>
           {t1}
         </div>
         <div className="image_text">
           <ImageCard alt="The Gantt Chart view of tasks on the page"
-            size="4x6" image={gantt} classname="alt-text-color"
+            size="4x6" image={gantt}
             textEnabled text="The Gantt Chart view"/>
           {t2}
         </div>
