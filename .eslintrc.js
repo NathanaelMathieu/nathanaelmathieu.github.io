@@ -91,7 +91,7 @@ module.exports = {
         "lines-between-class-members": "error",
         "max-classes-per-file": "error",
         "max-depth": "error",
-        "max-len": ["error", {"ignoreTemplateLiterals": true}],
+        "max-len": ["off", {"ignoreTemplateLiterals": true}],
         "max-lines": "error",
         "max-lines-per-function": "error",
         "max-nested-callbacks": "error",
