@@ -1,11 +1,13 @@
 @import "src/style.scss";
 
+$borderRadius: 12px;
+
 .ImageCard {
   @include neuShadow(1px, $down: true);
   width: fit-content;
   height: fit-content;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: $borderRadius;
   transition: box-shadow 0.5s, transform 0.5s ease-in-out;
 
   #wrapper {
@@ -13,6 +15,7 @@
     width: 100%;
     height: fit-content;
     img {
+    border-radius: calc(#{$borderRadius}/2);
       display: block;
       width: 100%;
       object-fit: contain;
@@ -26,6 +29,7 @@
       width: 100%;
       overflow: hidden;
       min-width: 0;
+      border-radius: calc(#{$borderRadius}/2);
 
       opacity: 0;
       visibility: hidden;
