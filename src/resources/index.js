@@ -8,4 +8,4 @@ export {
   } from "./ImageNotFound_square.png";
 export {
   default as professionalPhoto
-  } from "./ProfessionalPhoto.JPG";
+  } from "./nathanael-mathieu-headshot.png";
